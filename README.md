@@ -43,6 +43,12 @@ POST /startups
 }
 ```
 
+##### Suggest terms
+
+```
+GET /suggest?q=dinh
+```
+
 ##### Search startups
 
 ```
