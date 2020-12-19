@@ -1,10 +1,8 @@
 const SonicChannel = require('sonic-channel')
 
-const options = {
-  host: 'localhost',
-  port: 1491,
-  auth: 'SecretPassword'
-}
+const { SONIC } = require('./config.json')
+
+const options = SONIC
 
 const handlers = piece => ({
   connected : () => {
