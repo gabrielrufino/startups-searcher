@@ -7,6 +7,7 @@ Searcher for startups using sonic.
 Cloning the repo:
 ```bash
 git clone https://github.com/gabrielrufino/startups-searcher.git
+cd startups-searcher
 ```
 
 Starting the infra:
