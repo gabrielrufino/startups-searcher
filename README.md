@@ -35,8 +35,6 @@ GET /
 POST /startups
 ```
 
-**Body**
-
 ```json
 {
   "name": "Heppi",
