@@ -35,6 +35,19 @@ app.post('/startups', async (request, response) => {
     .json(startup)
 })
 
+app.get('/suggest', async (request, response) => {
+  const { q } = request.query
+
+  const result = await search.suggest(
+    'startups',
+    'default',
+    q,
+    { limit: 5 }
+  )
+
+  response.json(result)
+})
+
 app.get('/search', async (request, response) => {
   const { q } = request.query
 
@@ -54,7 +67,7 @@ app.get('/search', async (request, response) => {
         name
       }
     })
-  );
+  )
 })
 
 app.get('/startups/:id', async (request, response) => {
